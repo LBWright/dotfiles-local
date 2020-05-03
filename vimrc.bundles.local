@@ -16,6 +16,9 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Valloric/MatchTagAlways'
 Plug 'alvan/vim-closetag'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tomtom/tcomment_vim'
+
+Plug 'tomtom/tcomment_vim'
 
 " themes and other styles
 Plug 'haishanh/night-owl.vim'

@@ -25,7 +25,9 @@ vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 let g:NERDTreeIgnore = ['^node_modules$']
 
-
+" Bind Go tests
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
 
 """"""""""""" Color Schemes  """"""""""""""""""
 set termguicolors
