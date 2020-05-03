@@ -1,0 +1,53 @@
+" This file contains personal (local) overrides for thoughtbots default
+" dotfiles configuration config: https://github.com/thoughtbot/dotfiles
+
+" quick `roll` ESC
+imap kj <Esc>
+imap jk <Esc>
+vmap kj <Esc>
+vmap jk <Esc>
+
+set colorcolumn=
+
+set relativenumber
+
+"set autochdir
+
+nmap 0 ^
+
+nmap k gk
+nmap j gj
+
+
+"""""""""""""Configure NerdTree"""""""""""""
+map <C-n> :NERDTreeToggle<CR>
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
+let g:NERDTreeIgnore = ['^node_modules$']
+
+
+
+""""""""""""" Color Schemes  """"""""""""""""""
+set termguicolors
+set background=dark
+set t_Co=256
+colorscheme night-owl
+" colorscheme pt_black
+
+" remove theme background to use terminal theme background color
+highlight Normal ctermbg=None
+" set ag (the silver surfer) as ack.vim search library
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+" markdown preview hotkey
+let vim_markdown_preview_hotkey='<C-q>'
+" default chrome for markdown preview
+let vim_markdown_preview_browser='Google Chrome'
+" use grip for GitHub style markdown preview
+let vim_markdown_preview_github=1
+
+" sets each level of indentation to different line type
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
